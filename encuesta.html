@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, mininum-scale=1.0 ">
+    <title>ENCUESTA DE SATISFACCION</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+</head>
+
+<body>
+    <header>
+        <!--Logo-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <img class="logo" src="img/ccimaofficial.svg">
+                </div>
+            </div>
+        </div> 
+        <!-- Aqui termina el logo -->
+
+        <hr class="emcabezado ">
+        <!--Solo es el emcabezado -->
+
+        <div class="container-fluid">
+            <div class="row">
+                <hr class="hr2">
+                <div class="vl">
+                    <h1 class="Tituto-h1 text-start">Ayúdenos a mejorar</h1>
+                    <p class="tex">Dedique unos minutos a completar esta pequeña encuesta.
+                        Sus respuestas serán tratadas de forma confidencial y serán
+                        utilizadas sólo para mejorar el servicio que le proporcionamos.
+                        Esta encuesta dura aproximadamente <strong>dos minutos</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="vertical"></div>
+
+        <br>
+        <div class="progress container" >
+            <div id="Barra" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>
+          </div>
+        <br>
+
+        <!-- Formulario -->
+        <form  id="formulario" action="encuesta.php" method="POST">
+    
+        <div class="container-fluid">
+            <div class="row fila-img">
+                <hr class="hr2">
+                <div class="vl">
+                    <p>1. ¿Cuánto influyó la información que presentó su asesor/asesora para la
+                        compra o no de la propiedad?</p>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-2 col-md-2 col-lg-2">
+                            <input class="btn_radio" type="radio" id="p11" name="Pregunta1" value="1">
+                            <label for="p11"><img width="50px"  src="img/caritas/enojado.svg"  alt=""  required> </label>
+                        </div>
+                        <div class="col-2 col-md-2 col-lg-2">
+                            <input class="btn_radio" type="radio" id="p12" name="Pregunta1" value="2">
+                            <label for="p12"><img width="50px"   src="img/caritas/triste.svg"  alt="" required></label>
+                        </div>
+                        <div class="col-2 col-md-2 col-lg-2">
+                            <input class="btn_radio" type="radio" id="p13" name="Pregunta1" value="3">
+                            <label for="p13"><img width="50px" src="img/caritas/preocupado.svg" alt=""  required></label>
+                        </div>
+                        <div class="col-2 col-md-2 col-lg-2">
+                            <input class="btn_radio" type="radio" id="p14" name="Pregunta1" value="4">
+                            <label for="p14"><img width="50px"  src="img/caritas/feliz.svg" alt=""  required></label>
+                        </div>
+                        <div class="col-2 col-md-2 col-lg-2">
+                            <input class="btn_radio" type="radio" id="p15" name="Pregunta1" value="5">
+                            <label for="p15"><img width="50px"  src="img/caritas/felicidad.svg" alt=""  required></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <div class="row  fila-img">
+                <hr class="hr2">
+                <div class="vl">
+                    <p>2. ¿Cómo considera que fue la imagen del asesor/asesora que lo atendió?</p>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-2 col-md-2 col-lg-2">
+                            <input class="btn_radio" type="radio" id="p21" name="Pregunta2" value="1">
+                            <label for="p21"><img width="50px" src="img/caritas/enojado.svg"  alt=""> </label>
+                        </div>
+                        <div class="col-2 col-md-2 col-lg-2">
+                            <input class="btn_radio" type="radio" id="p22" name="Pregunta2" value="2">
+                            <label for="p22"><img width="50px"  src="img/caritas/triste.svg"   alt=""></label>
+                        </div>
+                        <div class="col-2 col-md-2 col-lg-2">
+                            <input class="btn_radio" type="radio" id="p23" name="Pregunta2" value="3">
+                            <label for="p23"><img width="50px"  src="img/caritas/preocupado.svg" alt=""></label>
+                        </div>
+                        <div class="col-2 col-md-2 col-lg-2">
+                            <input class="btn_radio" type="radio" id="p24" name="Pregunta2" value="4">
+                            <label for="p24"><img width="50px" src="img/caritas/feliz.svg" alt=""></label>
+                        </div>
+                        <div class="col-2 col-md-2 col-lg-2">
+                            <input class="btn_radio" type="radio" id="p25" name="Pregunta2" value="5">
+                            <label for="p25"><img width="50px" src="img/caritas/felicidad.svg" alt=""></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row fila-img">
+                <hr class="hr2">
+                <div class="vl">
+                    <p>3. ¿Cómo considera que fue el trato del asesor/asesora que lo atendió?</p>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-2 col-md-2 col-lg-2">
+                            <input class="btn_radio" type="radio" id="p31" name="Pregunta3" value="1">
+                            <label for="p31"><img width="50px" src="img/caritas/enojado.svg" alt=""> </label>
+                        </div>
+                        <div class="col-2 col-md-2 col-lg-2">
+                            <input class="btn_radio" type="radio" id="p32" name="Pregunta3" value="2">
+                            <label for="p32"><img width="50px"  src="img/caritas/triste.svg"  alt=""></label>
+                        </div>
+                        <div class="col-2 col-md-2 col-lg-2">
+                            <input class="btn_radio" type="radio" id="p33" name="Pregunta3" value="3">
+                            <label for="p33"><img width="50px" src="img/caritas/preocupado.svg" alt=""></label>
+                        </div>
+                        <div class="col-2 col-md-2 col-lg-2">
+                            <input class="btn_radio" type="radio" id="p34" name="Pregunta3" value="4">
+                            <label for="p34"><img width="50px"  src="img/caritas/feliz.svg"  alt=""></label>
+                        </div>
+                        <div class="col-2 col-md-2 col-lg-2">
+                            <input class="btn_radio" type="radio" id="p35" name="Pregunta3" value="5">
+                            <label for="p35"><img width="50px"  src="img/caritas/felicidad.svg"  alt=""></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row fila-img">
+                <hr class="hr2">
+                <div class="vl">
+                    <p>4. ¿El producto que le ofrecieron cubrió sus expectativas?</p>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-2 col-md-2 col-lg-2">
+                            <input class="btn_radio" type="radio" id="p41" name="Pregunta4" value="1">
+                            <label for="p41"><img width="50px"  src="img/caritas/enojado.svg"   alt=""> </label>
+                        </div>
+                        <div class="col-2 col-md-2 col-lg-2">
+                            <input class="btn_radio" type="radio" id="p42" name="Pregunta4" value="2">
+                            <label for="p42"><img width="50px"  src="img/caritas/triste.svg"  alt=""></label>
+                        </div>
+                        <div class="col-2 col-md-2 col-lg-2">
+                            <input class="btn_radio" type="radio" id="p43" name="Pregunta4" value="3">
+                            <label for="p43"><img width="50px" src="img/caritas/preocupado.svg" alt=""></label>
+                        </div>
+                        <div class="col-2 col-md-2 col-lg-2">
+                            <input class="btn_radio" type="radio" id="p44" name="Pregunta4" value="4">
+                            <label for="p44"><img width="50px" src="img/caritas/feliz.svg" alt=""></label>
+                        </div>
+                        <div class="col-2 col-md-2 col-lg-2">
+                            <input class="btn_radio" type="radio" id="p45" name="Pregunta4" value="5">
+                            <label for="p45"><img width="50px" src="img/caritas/felicidad.svg" alt=""></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            
+
+             <!--Pregunta5-->
+             <div class="row">
+                <hr class="hr2">
+                <div class="vl">
+                    <div id="vl2">
+                        <p>5. Por favor me podría comentar ¿Cuál o cuáles son los aspectos que lo
+                            llevaron a tener un interés por adquirir alguno de nuestros productos?</p>
+
+                        <div class="container-form">
+
+                            <div class="row inp-lebel d-flex p-5">
+                                <div class="col-12 p-col col-md-1  d-flex justify-content-end align-items-center">
+                                    <spam class="inciso d-flex">A)</spam>
+                                </div>
+
+                                <div class="col-12 p-col  col-md-5 d-flex justify-content-inline">
+                                    <input class="I_nput" type="radio" name="Pregunta5"   id="a1" value="1">
+                                    <label class="L_abel" for="a1">Esta dentro de su presupuesto</label><br>                                                                                                                                                            
+                                 </div>
+
+                                 <div class="col-12 p-col  col-md-5 d-flex justify-content-inline ">
+                                    <input class="I_nput" type="radio" name="Pregunta5"   id="a2" value="2" >
+                                    <label class="L_abel" for="a2">Para construir a futuro</label>
+                                </div>
+                            </div>
+
+                           
+                            <div class="row d-flex p-5"> 
+                                <div class="col-12 p-col col-md-1 d-flex  justify-content-end align-items-center">
+                                    <spam class="inciso">B)</spam>
+                                </div>
+                                
+                                <div class="col-12 p-col  col-md-5 d-flex justify-content-inline">
+                                    <input class="I_nput" type="radio" name="Pregunta6" id="b1" value="1" >
+                                    <label class="L_abel" for="b1">Como Inversion</label><br>
+                                 </div>
+
+                                 <div class="col-12 p-col  col-md-5 d-flex justify-content-inline ">
+                                    <input class="I_nput" type="radio" name="Pregunta6"    id="b2" value="2">
+                                    <label class="L_abel" for="b2">Tiene ubicacion deseada</label>
+                                </div>
+                            </div>
+
+                            <div class="row d-flex p-5">
+                                <div class="col-12 p-col col-md-1 d-flex  justify-content-end align-items-center">
+                                    <spam class="inciso">C)</spam>
+                                </div>
+                                
+                                <div class="col-12 p-col  col-md-5 d-flex justify-content-inline">
+                                    <input class="I_nput" type="radio" name="Pregunta7"  id="c1"  value="1" >
+                                    <label class="L_abel" for="c1">Tiene la extension deseada</label><br>
+                                 </div>
+
+
+                                 <div class="col-12 p-col  col-md-5 d-flex justify-content-inline ">
+                                    <input class="I_nput" type="radio" name="Pregunta7"   id="c2" value="2">
+                                    <label class="L_abel" for="c2">Cumple con las amenidades que le gustan</label>
+                                </div>
+                            </div>
+
+
+                            <div class="row d-flex p-5">
+                                <div class="col-12 p-col col-md-1 d-flex  justify-content-end align-items-center">
+                                    <spam class="inciso">D)</spam>
+                                </div>
+
+                                <div class="col-12 p-col  col-md-5 d-flex justify-content-inline">
+                                    <input class="I_nput" type="radio" name="Pregunta8"  id="d1"  value="1" >
+                                    <label class="L_abel" for="d1">La informacion que recibo</label><br>
+                                 </div>
+
+                                 <div class="col-12 p-col  col-md-5 d-flex justify-content-inline ">
+                                    <input class="I_nput" type="radio" name="Pregunta8"   id="e2" value="2">
+                                    <label class="L_abel" for="e2">¿Otra razon?, ¿Cual?</label>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
+
+            <br>
+            <div class="row">
+                <hr class="hr2">
+                <div class="vl">
+                    <p>6. ¿Cuál o cuáles fueron los medios por los que se enteró de Grupo CCIMA,
+                        Portto Blanco ó Navetec?</p>
+
+                        <div class="container">
+
+                                <div class="row form-check  inp-lebel d-flex p-5">
+                                    <input class="I_nput " type="checkbox" name="checkbox[]"  value="Instagram" id="f2"  required>
+                                    <label class="L_abel1 " for="f2">Instagram</label>
+                                </div>
+
+                                <div class="row form-check  inp-lebel d-flex p-5">
+                                    <input class="I_nput" type="checkbox" name="checkbox[]"   value="Espectaculares" id="f3"  required>
+                                    <label class="L_abel1" for="f3">Espectaculares</label>
+                                </div>      
+
+                                <div class="row form-check  inp-lebel d-flex p-5">
+                                    <input class="I_nput" type="checkbox"  name="checkbox[]"  value="Flayers" id="f4"  required>
+                                    <label class="L_abel1" for="f4">Flayers</label>
+                                </div>
+
+                                <div class="row form-check  inp-lebel d-flex p-5">
+                                    <input class="I_nput" type="checkbox"   name="checkbox[]"  value="Recomendacion" id="f5"  required>
+                                    <label class="L_abel1" for="f5">Recomendacion</label>
+                                </div>      
+                        </div>
+                    </div>
+                </div>
+
+            <br>
+             <div class="row fila-img">
+                <hr class="hr2">
+                <div class="vl">
+                    <p>7.¿La información que recibió considera que fue la más adecuada / completa?</p>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-2 col-md-2 col-lg-2">
+                            <input class="btn_radio" type="radio"  name="Pregunta9"  id="f6" value="1">
+                            <label for="f6"><img width="50px"  src="img/caritas/enojado.svg"   alt=""> </label>
+                        </div>
+                        <div class="col-2 col-md-2 col-lg-2">
+                            <input class="btn_radio" type="radio"   name="Pregunta9" id="f7" value="2">
+                            <label for="f7"><img width="50px"  src="img/caritas/triste.svg"  alt=""></label>
+                        </div>
+                        <div class="col-2 col-md-2 col-lg-2">
+                            <input class="btn_radio" type="radio"  name="Pregunta9" id="f8" value="3">
+                            <label for="f8"><img width="50px" src="img/caritas/preocupado.svg" alt=""></label>
+                        </div>
+                        <div class="col-2 col-md-2 col-lg-2">
+                            <input class="btn_radio" type="radio"   name="Pregunta9" id="f9" value="4">
+                            <label for="f9"><img width="50px" src="img/caritas/feliz.svg" alt=""></label>
+                        </div>
+                        <div class="col-2 col-md-2 col-lg-2">
+                            <input class="btn_radio" type="radio"   name="Pregunta9" id="f10" value="5">
+                            <label for="f10"><img width="50px" src="img/caritas/felicidad.svg" alt=""></label>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+
+            <br>
+             <div class="row fila-img">
+                <hr class="hr2">
+                <div class="vl">
+                    <p>8.¿Cómo considera que es la ubicación de nuestras oficinas?</p>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-2 col-md-2 col-lg-2">
+                            <input class="btn_radio" type="radio" id="f11" name="Pregunta10" value="1">
+                            <label for="f11"><img width="50px"  src="img/caritas/enojado.svg"   alt=""> </label>
+                        </div>
+                        <div class="col-2 col-md-2 col-lg-2">
+                            <input class="btn_radio" type="radio" id="f12" name="Pregunta10" value="2">
+                            <label for="f12"><img width="50px"  src="img/caritas/triste.svg"  alt=""></label>
+                        </div>
+                        <div class="col-2 col-md-2 col-lg-2">
+                            <input class="btn_radio" type="radio" id="f13" name="Pregunta10" value="3">
+                            <label for="f13"><img width="50px" src="img/caritas/preocupado.svg" alt=""></label>
+                        </div>
+                        <div class="col-2 col-md-2 col-lg-2">
+                            <input class="btn_radio" type="radio" id="f14" name="Pregunta10" value="4">
+                            <label for="f14"><img width="50px" src="img/caritas/feliz.svg" alt=""></label>
+                        </div>
+                        <div class="col-2 col-md-2 col-lg-2">
+                            <input class="btn_radio" type="radio" id="f15" name="Pregunta10" value="5">
+                            <label for="f15"><img width="50px" src="img/caritas/felicidad.svg" alt=""></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <br>
+            <div class="row fila-img">
+                <hr class="hr2">
+                <div class="vl">
+                    <p>9.¿Qué tan adecuadas le parecieron las instalaciones?</p>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-2 col-md-2 col-lg-2">
+                            <input class="btn_radio" type="radio" id="f16" name="Pregunta11" value="1">
+                            <label for="f16"><img width="50px"  src="img/caritas/enojado.svg"   alt=""> </label>
+                        </div>
+                        <div class="col-2 col-md-2 col-lg-2">
+                            <input class="btn_radio" type="radio" id="f17" name="Pregunta11" value="2">
+                            <label for="f17"><img width="50px"  src="img/caritas/triste.svg"  alt=""></label>
+                        </div>
+                        <div class="col-2 col-md-2 col-lg-2">
+                            <input class="btn_radio" type="radio" id="f18" name="Pregunta11" value="3">
+                            <label for="f18"><img width="50px" src="img/caritas/preocupado.svg" alt=""></label>
+                        </div>
+                        <div class="col-2 col-md-2 col-lg-2">
+                            <input class="btn_radio" type="radio" id="f19" name="Pregunta11" value="4">
+                            <label for="f19"><img width="50px" src="img/caritas/feliz.svg" alt=""></label>
+                        </div>
+                        <div class="col-2 col-md-2 col-lg-2">
+                            <input class="btn_radio" type="radio" id="f20" name="Pregunta11" value="5">
+                            <label for="f20"><img width="50px" src="img/caritas/felicidad.svg" alt=""></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <br>
+            <div class="row fila-img">
+                <hr class="hr2">
+                <div class="vl">
+                    <p>10.¿Cómo considera que fue la atención que recibió en nuestras oficinas? </p>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-2 col-md-2 col-lg-2">
+                            <input class="btn_radio" type="radio" id="f21" name="Pregunta12" value="1">
+                            <label for="f21"><img width="50px"  src="img/caritas/enojado.svg"   alt=""> </label>
+                        </div>
+                        <div class="col-2 col-md-2 col-lg-2">
+                            <input class="btn_radio" type="radio" id="f22" name="Pregunta12" value="2">
+                            <label for="f22"><img width="50px"  src="img/caritas/triste.svg"  alt=""></label>
+                        </div>
+                        <div class="col-2 col-md-2 col-lg-2">
+                            <input class="btn_radio" type="radio" id="f23" name="Pregunta12" value="3">
+                            <label for="f23"><img width="50px" src="img/caritas/preocupado.svg" alt=""></label>
+                        </div>
+                        <div class="col-2 col-md-2 col-lg-2">
+                            <input class="btn_radio" type="radio" id="f24" name="Pregunta12" value="4">
+                            <label for="f24"><img width="50px" src="img/caritas/feliz.svg" alt=""></label>
+                        </div>
+                        <div class="col-2 col-md-2 col-lg-2">
+                            <input class="btn_radio" type="radio" id="f25" name="Pregunta12" value="5">
+                            <label for="f25"><img width="50px" src="img/caritas/felicidad.svg" alt=""></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <br>
+            <div class="row ">
+                <hr class="hr2">
+                <div class="vl">
+                    <p>11.¿Cómo considera que fue la atención que recibió por parte de su
+                        asesor/asesora?(Abierta)</p>
+
+                    <div class="container-label  ">
+                        <div class="row">
+                            <p class="label">Describa la experiencia</p>
+                            <div clas="col">
+                                <textarea class="campo" id="txt_textarea" name="txt_textarea"  required ></textarea>
+                            </div>
+                        </div>
+                    </div> 
+
+                </div>
+            </div>
+            <!-- Aqui termina el menu-->
+            <br>
+        </div>
+       
+         <button name="save_multiple_checkbox" type="submit" class="btn btn-primary  text-uppercase fw-bold">Insertar</button>
+        </form>
+  
+ 
+    </header>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row ">
+                <!--Cada row(fila) tiene un maximo de 12 dolumnas -->
+                <div class="col-12 d-flex justify-content-center">
+                    <p class="p-ccima">GRUPO CCIMA 2022</p>
+                </div>
+
+                
+            </div>
+        </div>
+
+    </footer>
+    <script src="js/app.js"></script>
+    <!-- <script src="js/caritas.js"></script> -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
