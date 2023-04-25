@@ -1,7 +1,7 @@
 ---
 deployment:
 tasks:
-  - export DEPLOYPATH=/home/bbbme11/public_html/
+  - export DEPLOYPATH=/home/bbbme11/repositories/prueba_1
   - /bin/cp index.html $DEPLOYPATH
   - /bin/cp style.css $DEPLOYPATH
   
